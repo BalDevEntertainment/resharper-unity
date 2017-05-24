@@ -13,6 +13,10 @@
   <ItemGroup>
     <None Remove="api.xml" />
     <EmbeddedResource Include="api.xml" />
+    <Compile Remove="Unity3dRider\RiderAssetPostprocessor.cs" />
+    <EmbeddedResource Include="Unity3dRider\RiderAssetPostprocessor.cs" />
+    <Compile Remove="Unity3dRider\RiderPlugin.cs" />
+    <EmbeddedResource Include="Unity3dRider\RiderPlugin.cs" />
   </ItemGroup>
   <ItemGroup>
     <!-- This requires WPF and PresentationFramework to build -->
@@ -34,5 +38,8 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Unity3dRider" />
   </ItemGroup>
 </Project>
